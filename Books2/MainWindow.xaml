@@ -1,0 +1,24 @@
+﻿<Window x:Class="Books2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Books2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Grid Background="DarkRed" x:Name="GridAll">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.10*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.10*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Margin="10" Background="White" Content="Generate couple 'o books" x:Name="Ok" Click="Ok_Click"/>
+        <TextBlock Grid.Row="1" Background="White" Margin="10" x:Name="Catalog"/>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="10 10">
+            <CheckBox Foreground="White" Content="Romance" Margin="10" FontSize="15" x:Name="Romance" Checked="Romance_Checked"/>
+            <CheckBox Foreground="White" Content="Fantasy" Margin="10" FontSize="15" x:Name="Fantasy" Checked="Fantasy_Checked"/>
+            <CheckBox Foreground="White" Content="Horror" Margin="10" FontSize="15" x:Name="Horror" Checked="Horror_Checked"/>
+            <CheckBox Foreground="White" Content="Science" Margin="10" FontSize="15" x:Name="Science" Checked="Science_Checked"/>
+        </StackPanel>
+    </Grid>
+</Window>
